@@ -14,11 +14,11 @@ This Django-based web application allows users to upload CSV files, performs dat
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/yourusername/your-repo-name.git
-    cd your-repo-name
+    git clone https://github.com/rushideshmukh3620/VE3---Python-Developer-Task-1
+    cd VE3---Python-Developer-Task-1
     ```
 
-2. **Create a virtual environment and activate it**:
+2. **Create a virtual environment and activate it**:(If necessary)
     ```bash
     python -m venv venv
     source venv/bin/activate   # On Windows use `venv\Scripts\activate`
@@ -29,7 +29,7 @@ This Django-based web application allows users to upload CSV files, performs dat
     pip install -r requirements.txt
     ```
 
-4. **Create necessary directories**:
+4. **Create necessary directories**:(If not present)
     ```bash
     mkdir uploaded_files
     mkdir -p static/plots
@@ -50,7 +50,7 @@ This Django-based web application allows users to upload CSV files, performs dat
 
 ## Sample CSV File
 
-A sample CSV file named `sample.csv` is included in the repository for testing purposes.
+A sample CSV file named `iris.csv` is included in the repository for testing purposes.
 
 ## Project Structure
 
