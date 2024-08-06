@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h2>Data Analysis Results</h2>
+
+    <h3>First Few Rows</h3>
+    {{ head|safe }}
+
+    <h3>Summary Statistics</h3>
+    {{ desc|safe }}
+
+    <h3>Missing Values</h3>
+    {{ missing_values|safe }}
+
+    <h3>Plots</h3>
+    {% for column, plot in plots.items %}
+        <h4>{{ column }}</h4>
+        <img src="/{{ plot }}" alt="{{ column }}">
+    {% endfor %}
+
+</body>
+</html>
